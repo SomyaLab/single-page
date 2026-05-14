@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Somya Labs</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --homepage-outer-padding: 46px;
+      --homepage-max-width: calc(1344px + var(--homepage-outer-padding) * 2);
+      --homepage-padding-left: 128px;
+      --homepage-padding-right: 128px;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      background: #111;
+      color: #d4d4d4;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      padding: 64px 0 80px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--homepage-max-width);
+      margin: 0 auto;
+      padding-left: calc(var(--homepage-padding-left) + var(--homepage-outer-padding) - 1px);
+      padding-right: calc(var(--homepage-padding-right) + var(--homepage-outer-padding) - 1px);
+    }
+
+    /* ── Header ── */
+    h1 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      color: #d4d4d4;
+      margin-bottom: 20px;
+    }
+
+    .tagline {
+      font-weight: bold;
+      color: #e8e8e8;
+      margin-bottom: 24px;
+    }
+
+    /* ── Body text ── */
+    p {
+      margin-bottom: 1.5em;
+      color: #d4d4d4;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: 48px;
+    }
+
+    .footer-links {
+      margin-bottom: 8px;
+    }
+
+    .footer-links a {
+      color: #1959b2;
+      text-decoration: none;
+      margin-right: 16px;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-copy {
+      color: #666;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --homepage-outer-padding: 0px;
+        --homepage-padding-left: 16px;
+        --homepage-padding-right: 16px;
+      }
+
+      body {
+        padding: 40px 16px 60px;
+        font-size: 0.95rem;
+      }
+
+      h1 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Somya Labs</h1>
+
+    <p class="tagline">Knowledge should not lose its language.</p>
+
+    <p>Somya builds speech and language systems for Indian languages, bolis, accents, and scripts.</p>
+
+    <p>Our work starts with a simple problem: much of India’s knowledge exists in forms that machines still do not understand well.</p>
+
+    <p>Local words, pronunciations, oral traditions, scripts, and dialects disappear when they are not recorded, searched, translated, or spoken back with care.</p>
+
+    <h3>What we are building</h3>
+
+    <p>We are building practical systems for speech recognition, text-to-speech, translation, OCR, voice agents, and knowledge search.</p>
+
+    <p>The goal is not to replace local languages with one common interface. The goal is to help knowledge move across languages without flattening the original voice.</p>
+
+    <h3>Focus</h3>
+
+    <p>Preserve the original. Carry the meaning. Make it usable.</p>
+
+    <footer>
+      <div class="footer-links">
+        <a href="mailto:hello@somya.ai">Contact</a>
+        <a href="mailto:career@somya.ai">Apply</a>
+      </div>
+      <div class="footer-copy">Somya Labs  &copy; 2026</div>
+    </footer>
+
+  </div>
+</body>
+</html>
